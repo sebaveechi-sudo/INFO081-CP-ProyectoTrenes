@@ -1,5 +1,3 @@
-# models/entidades.py
-
 class Pasajero:
     def __init__(self, id_p, origen_id, destino_id, hora_llegada_estacion):
         self.id = id_p
