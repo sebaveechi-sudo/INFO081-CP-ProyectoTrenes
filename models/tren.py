@@ -12,8 +12,8 @@ class Estacion:
     def __init__(self, id_est, nombre, km_ubicacion):
         self.id = id_est
         self.nombre = nombre
-        self.km = km_ubicacion  # Kilómetro exacto según Anexo 1
-        self.cola_pasajeros = [] # Lista de Pasajeros esperando
+        self.km = km_ubicacion  
+        self.cola_pasajeros = [] 
 
     def to_dict(self):
         return {
@@ -30,8 +30,8 @@ class Tren:
         self.capacidad = capacidad
         self.velocidad_max = velocidad_max
         self.km_actual = km_actual 
-        self.direccion = 1  # 1: Hacia el Sur (Chillán), -1: Hacia el Norte (Santiago)
-        self.estado = "EN_ESTACION" # EN_ESTACION, MOVIMIENTO
+        self.direccion = 1  
+        self.estado = "EN_ESTACION" 
         self.pasajeros = []
         self.proxima_estacion_id = None
 
