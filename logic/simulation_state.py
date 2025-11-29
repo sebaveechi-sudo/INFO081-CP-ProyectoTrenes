@@ -1,4 +1,3 @@
-# logic/simulation_state.py
 import json
 import os
 import random
