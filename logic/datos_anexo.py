@@ -2,7 +2,6 @@
 from models.entidades import Estacion, Tren
 
 def cargar_estaciones_base():
-    # Datos extraídos del Anexo 1 (Tramo Santiago - Chillán)
     datos = [
         ("EST-01", "Alameda", 0),
         ("EST-02", "San Bernardo", 16),
@@ -20,10 +19,7 @@ def cargar_estaciones_base():
     return [Estacion(d[0], d[1], d[2]) for d in datos]
 
 def crear_flota_inicial():
-    # Modelos según Anexo 1
-    # UTS-444: 140 km/h, 302 pax
     t1 = Tren("T-01", "UTS-444", 302, 140, km_actual=0)
-    # T-EM: 160 km/h, 400 pax (Ejemplo ficticio basado en mejora)
-    t2 = Tren("T-02", "UTS-444", 302, 140, km_actual=398) # Parte desde Chillán
-    t2.direccion = -1 # Va al norte
+    t2 = Tren("T-02", "UTS-444", 302, 140, km_actual=398) 
+    t2.direccion = -1 
     return [t1, t2]
