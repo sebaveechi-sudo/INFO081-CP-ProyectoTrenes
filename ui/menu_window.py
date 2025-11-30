@@ -10,7 +10,7 @@ class MenuWindow(tk.Frame):
         self.configure(bg=settings.COLOR_FONDO)
 
         label = tk.Label(self, text="Simulador de Tráfico Ferroviario EFE", 
-                         font=("Arial", 24, "bold"), bg=settings.COLOR_FONDO, fg=settings.COLOR_TEXTO_BLANCO)
+                         font=("Arial", 24, "bold"), bg=settings.COLOR_FONDO, fg=settings.COLOR_TEXTO_MORADO)
         label.pack(pady=50)
 
         btn_nueva = tk.Button(self, text="Nueva Simulación", 
